@@ -58,6 +58,7 @@ EG. x-y*z to prefix and postfix?
 1.prefix = -x*yz
 2.postfix - xyz*-
 ```
+- stack operation 2
 
 
 
