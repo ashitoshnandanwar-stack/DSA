@@ -49,12 +49,12 @@ Explanation: When we perform the conversion from infix to postfix expression +, 
 - 1. Infix = eg. a+b , a-b, p/v
   2. Prefix - eg. +ab, -ab, /pv
   3. Postfix - ab+, ab-, pv/
-<br>
+
 ```
--Eg. infix = A*(B+C)*D <br>
+Eg. infix = A*(B+C)*D <br>
  Postfix - ABC +* D
 first to solve parenthesis and then solve multiply in left side then right side.
--EG. x-y*z to prefix and postfix?
+EG. x-y*z to prefix and postfix?
 1.prefix = -x*yz
 2.postfix - xyz*-
 ```
