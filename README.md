@@ -22,6 +22,7 @@ Algorithm and Data Structure
 - Underflow occurs when the user performs a pop operation on an empty stack.
 - Overflow occurs when the stack is full and the user performs a push operation.
 -  Garbage Collection is used to recover the memory occupied by objects that are no longer used.
+  
 ```
 What is the value of the postfix expression 6 3 2 4 + – *?
 a) 1
