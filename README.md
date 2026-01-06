@@ -60,6 +60,25 @@ EG. x-y*z to prefix and postfix?
 ```
 - stack operation 2
 
+## 🌳 1. Introduction to Trees & Terminology
+<img width="1002" height="501" alt="image" src="https://github.com/user-attachments/assets/bf7620d9-3f3b-4563-b375-d88da0d544a8" />
+
+
+| Term                 | Meaning                                   |
+| -------------------- | ----------------------------------------- |
+| Root                 | Topmost node                              |
+| Parent               | Node having children                      |
+| Child                | Node derived from parent                  |
+| Siblings             | Nodes with same parent                    |
+| Leaf (External node) | Node with no children                     |
+| Internal node        | Node with at least one child              |
+| Edge                 | Connection between nodes                  |
+| Degree of node       | Number of children                        |
+| Degree of tree       | Max degree of any node                    |
+| Level                | Distance from root (root at level 0 or 1) |
+| Height               | Longest path from node to leaf            |
+| Depth                | Distance from root to node                |
+
 
 
 
