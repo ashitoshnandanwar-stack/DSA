@@ -114,10 +114,10 @@ Level Order (Level by level)
 
 ```
 A Binary Search Tree (BST) follows this rule:
-All values in the left subtree are smaller than the root
-All values in the right subtree are greater than the root
+- All values in the left subtree are smaller than the root
+- All values in the right subtree are greater than the root
 
-```
+
 
 ### 🌲 3. Binary Trees
 
