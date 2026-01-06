@@ -128,7 +128,9 @@ Right child
 
 MCQ Trap:
 Binary tree ≠ Binary Search Tree
+
 ```
+
 | Type                | Property                      |
 | ------------------- | ----------------------------- |
 | Full Binary Tree    | Each node has 0 or 2 children |
@@ -231,7 +233,9 @@ Happens when elements are inserted in increasing order
       30
         \
          40
+```
 
+```
 2️⃣ Left-skewed BST
 Happens when elements are inserted in decreasing order
 
@@ -242,7 +246,9 @@ Happens when elements are inserted in decreasing order
    20
    /
  10
+```
 
+```
 Why skewing is bad (Exam Point)
 Height of tree = n
 Searching becomes O(n) instead of O(log n)
