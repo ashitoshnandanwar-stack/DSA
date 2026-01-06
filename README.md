@@ -277,5 +277,4 @@ More complex than BST
 📌 MCQ Tip:
 AVL tree always balanced
 Height is always O(log n)
-
 ```
