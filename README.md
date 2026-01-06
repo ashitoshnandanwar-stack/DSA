@@ -111,6 +111,7 @@ Level Order (Level by level)
 | Level Order | Heap, ACBT          |
 
 - Inorder traversal of BST(Binary Search Tree) is always sorted. es — it means that when you perform an inorder traversal on a Binary Search Tree (BST), the output is always in sorted order.
+
 ```
 A Binary Search Tree (BST) follows this rule:
 - All values in the left subtree are smaller than the root
