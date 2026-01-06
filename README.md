@@ -261,7 +261,7 @@ BST loses its main advantage (fast search)
 | Skewed BST gives O(log n) search          |  False       |
 | Skewing happens due to sorted insertion   |  True        |
 
-### ⚖️ 7. AVL Tree
+### ⚖️ 7. AVL Tree (Adelson-Velsky & Landis Tree)
 
 - What is AVL Tree? : A self-balancing Binary Search Tree
 - Balance Factor = Height(left subtree) − Height(right subtree)
