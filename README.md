@@ -286,3 +286,13 @@ More complex than BST
 AVL tree always balanced
 Height is always O(log n)
 ```
+```
+Q. In array implementation (0-based), parent of node at index 10 is at:
+a) 4
+b) 5
+c) 9
+d) 20
+Ans: Parent index = (i - 1) / 2
+(10 - 1) / 2 = 4.5 → 4 (integer division)
+near ans 5.
+```
