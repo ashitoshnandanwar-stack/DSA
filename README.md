@@ -296,3 +296,16 @@ Ans: Parent index = (i - 1) / 2
 (10 - 1) / 2 = 4.5 → 4 (integer division)
 near ans 5.
 ```
+<hr>
+
+## Hashing
+
+### 🔹 Hash Function
+👉 A hash function is a function that converts a key into an index (hash value) used to store data in a hash table.
+- storing and retriving data from database at a time
+- time complexity O(1).
+- hash function = k mod 10, k mod n, mid square, folding method
+
+### 🔹 Hash Table
+👉 A hash table is a data structure that stores key–value pairs using a hash function.
+- Definition (Exam Ready) : A hash table stores data by computing an index from a hash function, enabling fast search, insert, and delete operations.
