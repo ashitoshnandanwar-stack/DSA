@@ -320,3 +320,211 @@ near ans 5.
 ### 🔹 Hash Table
 👉 A hash table is a data structure that stores key–value pairs using a hash function.
 - Definition (Exam Ready) : A hash table stores data by computing an index from a hash function, enabling fast search, insert, and delete operations.
+
+<hr>
+
+## *Time and Space Complexity*
+
+*Searching*
+| Search Method     | Best Case                      | Average Case | Worst Case                | Space Complexity                                   |
+| ----------------- | ------------------------------ | ------------ | ------------------------- | -------------------------------------------------- |
+| **Linear Search** | **O(1)** (first element found) | **O(n)**     | **O(n)** (last/not found) | **O(1)**                                           |
+| **Binary Search** | **O(1)** (middle element)      | **O(log n)** | **O(log n)**              | **O(1)** (Iterative) <br> **O(log n)** (Recursive) |
+
+- Linear Search works on unsorted or sorted data.
+- Binary Search works only on sorted data.
+
+  
+*Sorting*
+| Sorting Algorithm  | Best Case                        | Average Case | Worst Case        | Space Complexity                 |
+| ------------------ | -------------------------------- | ------------ | ----------------- | -------------------------------- |
+| **Selection Sort** | O(n²)                            | O(n²)        | O(n²)             | O(1)                             |
+| **Insertion Sort** | O(n) (already sorted)            | O(n²)        | O(n²)             | O(1)                             |
+| **Bubble Sort**    | O(n) (optimized, already sorted) | O(n²)        | O(n²)             | O(1)                             |
+| **Heap Sort**      | O(n log n)                       | O(n log n)   | O(n log n)        | O(1)                             |
+| **Merge Sort**     | O(n log n)                       | O(n log n)   | O(n log n)        | O(n)                             |
+| **Quick Sort**     | O(n log n)                       | O(n log n)   | O(n²) (bad pivot) | O(log n) (avg) <br> O(n) (worst) |
+
+- Selection, Insertion, Bubble → Simple but slow (O(n²))
+- Heap Sort → Fast and in-place
+- Merge Sort → Stable, uses extra memory
+- Quick Sort → Fastest on average, worst case O(n²) due to poor pivot choice
+
+*Hashing & Hash Table – Complexity*
+```
+Let
+n = number of elements
+m = size of hash table
+α = n / m = load factor
+```
+| Operation  | Average Time | Worst Time | Space |
+| ---------- | ------------ | ---------- | ----- |
+| **Search** | O(1)         | O(n)       | O(m)  |
+| **Insert** | O(1)         | O(n)       | O(m)  |
+| **Delete** | O(1)         | O(n)       | O(m)  |
+
+- Worst case occurs when many keys collide and form a chain/probe sequence
+```
+Types of Hash Functions (conceptual cost is same):
+Division Method
+Mid-Square Method
+Folding Method
+Multiplication Method
+All work in O(1) time.
+```
+### Collision Resolution Techniques
+
+| Technique             | Search / Insert (Average) | Worst Case | Space    |
+| --------------------- | ------------------------- | ---------- | -------- |
+| **Linear Probing**    | O(1)                      | O(n)       | O(m)     |
+| **Quadratic Probing** | O(1)                      | O(n)       | O(m)     |
+| **Double Hashing**    | O(1)                      | O(n)       | O(m)     |
+| **Chaining**          | O(1)                      | O(n)       | O(m + n) |
+
+```
+Linear Probing: h(k), h(k)+1, h(k)+2, ...
+
+Quadratic Probing: h(k) + i²
+
+Double Hashing: h1(k) + i * h2(k)
+```
+
+```
+Key Exam Points
+Hashing gives constant time operations on average.
+Poor hash function or high load factor → O(n) worst case.
+Open addressing methods (Linear, Quadratic, Double) use no extra list space.
+Chaining uses extra memory but reduces clustering.
+````
+
+*📊 Graph Theory – Time & Space Complexity Summary*
+```
+Let:
+V = Number of vertices
+E = Number of edges
+```
+
+🔷 Graph Representation
+
+| Method               | Time (Operations)                                        | Space        |
+| -------------------- | -------------------------------------------------------- | ------------ |
+| **Adjacency Matrix** | Edge check: O(1) <br> Traverse neighbors: O(V)           | **O(V²)**    |
+| **Adjacency List**   | Edge check: O(deg(V)) <br> Traverse neighbors: O(deg(V)) | **O(V + E)** |
+
+
+🔷 Graph Traversal Algorithms
+
+| Algorithm | Using Adjacency List | Using Adjacency Matrix | Extra Space |
+| --------- | -------------------- | ---------------------- | ----------- |
+| **BFS**   | O(V + E)             | O(V²)                  | O(V)        |
+| **DFS**   | O(V + E)             | O(V²)                  | O(V)        |
+
+
+🔷 Shortest Path Algorithms
+
+| Algorithm                             | Purpose                     | Time Complexity                                    | Space Complexity |
+| ------------------------------------- | --------------------------- | -------------------------------------------------- | ---------------- |
+| **Dijkstra (Level Setting)**          | Single source shortest path | O(V²) (Matrix) <br> O((V + E) log V) (Heap + List) | O(V)             |
+| **Floyd–Warshall (Level Correcting)** | All-pairs shortest path     | **O(V³)**                                          | **O(V²)**        |
+
+
+🔷 Spanning Tree Algorithms (MST)
+
+| Algorithm                | Time Complexity  | Space Complexity |
+| ------------------------ | ---------------- | ---------------- |
+| **Prim’s (Matrix)**      | O(V²)            | O(V²)            |
+| **Prim’s (List + Heap)** | O((V + E) log V) | O(V + E)         |
+| **Kruskal’s**            | O(E log E)       | O(V + E)         |
+
+```
+📝 Exam-Oriented Points
+Matrix → Dense graphs, more space
+List → Sparse graphs, less space
+BFS / DFS → O(V + E) using list
+Dijkstra → Single source
+Floyd–Warshall → All pairs
+Prim & Kruskal → Greedy MST algorithms
+```
+
+*🌳 Trees – Time & Space Complexity*
+
+🔹 Tree Traversals <br>
+(Preorder, Inorder, Postorder, Level Order)
+
+| Operation           | Time Complexity | Space Complexity           |
+| ------------------- | --------------- | -------------------------- |
+| Traversal           | **O(n)**        | **O(h)** (Recursion/Stack) |
+| Level Order (Queue) | **O(n)**        | **O(n)**                   |
+
+
+🔹 Binary Tree (General)
+| Operation | Time | Space |
+| --------- | ---- | ----- |
+| Search    | O(n) | O(h)  |
+| Insert    | O(n) | O(h)  |
+| Delete    | O(n) | O(h)  |
+
+- (Because no ordering is guaranteed)
+
+🔹 Complete / Almost Complete Binary Tree (ACBT)
+| Operation               | Time     | Space |
+| ----------------------- | -------- | ----- |
+| Height                  | O(1)     | O(1)  |
+| Access by Index (Array) | O(1)     | O(n)  |
+| Insert (Heap-like)      | O(log n) | O(n)  |
+| Delete                  | O(log n) | O(n)  |
+
+- Stored in array form.
+- Parent = (i-1)/2, Left = 2i+1, Right = 2i+2.
+
+
+🔹 Binary Search Tree (BST)
+| Operation | Average Case | Worst Case | Space |
+| --------- | ------------ | ---------- | ----- |
+| Search    | O(log n)     | O(n)       | O(h)  |
+| Insert    | O(log n)     | O(n)       | O(h)  |
+| Delete    | O(log n)     | O(n)       | O(h)  |
+
+- Worst case happens when BST becomes skewed.
+
+
+🔹 AVL Tree (Self-Balancing BST)
+| Operation | Time Complexity | Space Complexity |
+| --------- | --------------- | ---------------- |
+| Search    | **O(log n)**    | O(log n)         |
+| Insert    | **O(log n)**    | O(log n)         |
+| Delete    | **O(log n)**    | O(log n)         |
+| Rotation  | O(1)            | O(1)             |
+
+- AVL tree maintains balance factor = -1, 0, +1.
+- Height is always O(log n), so operations never degrade to O(n).
+
+Quick Exam Summary
+| Structure    | Search      | Insert   | Delete   | Space    |
+| ------------ | ----------- | -------- | -------- | -------- |
+| Binary Tree  | O(n)        | O(n)     | O(n)     | O(h)     |
+| ACBT (Array) | O(1) access | O(log n) | O(log n) | O(n)     |
+| BST (Avg)    | O(log n)    | O(log n) | O(log n) | O(h)     |
+| BST (Worst)  | O(n)        | O(n)     | O(n)     | O(n)     |
+| AVL Tree     | O(log n)    | O(log n) | O(log n) | O(log n) |
+
+
+*Linear Data Structure*
+- Let n = number of elements.
+
+| Data Structure                | Operation              | Time Complexity | Space Complexity |
+| ----------------------------- | ---------------------- | --------------- | ---------------- |
+| **Array**                     | Access (by index)      | **O(1)**        | **O(n)**         |
+|                               | Search                 | O(n)            |                  |
+|                               | Insert (at end)        | O(1)            |                  |
+|                               | Insert/Delete (middle) | O(n)            |                  |
+| **Stack** (Array/Linked List) | Push                   | **O(1)**        | **O(n)**         |
+|                               | Pop                    | **O(1)**        |                  |
+|                               | Peek                   | **O(1)**        |                  |
+| **Queue**                     | Enqueue                | **O(1)**        | **O(n)**         |
+|                               | Dequeue                | **O(1)**        |                  |
+|                               | Front/Rear             | **O(1)**        |                  |
+| **Circular Queue**            | Enqueue                | **O(1)**        | **O(n)**         |
+|                               | Dequeue                | **O(1)**        |                  |
+|                               | Front/Rear             | **O(1)**        |                  |
+
