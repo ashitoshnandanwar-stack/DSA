@@ -528,3 +528,30 @@ Quick Exam Summary
 |                               | Dequeue                | **O(1)**        |                  |
 |                               | Front/Rear             | **O(1)**        |                  |
 
+## Linked List
+- Let n = number of nodes in the list.
+
+| Linked List Type         | Operation           | Time Complexity                | Space Complexity                             |
+| ------------------------ | ------------------- | ------------------------------ | -------------------------------------------- |
+| **Singly Linked List**   | Access / Search     | **O(n)**                       | **O(n)**                                     |
+|                          | Insert at Beginning | **O(1)**                       |                                              |
+|                          | Insert at End       | O(n) *(O(1) if tail pointer)*  |                                              |
+|                          | Delete at Beginning | **O(1)**                       |                                              |
+|                          | Delete at End       | O(n)                           |                                              |
+| **Doubly Linked List**   | Access / Search     | **O(n)**                       | **O(n)** *(more than SLL due to 2 pointers)* |
+|                          | Insert at Beginning | **O(1)**                       |                                              |
+|                          | Insert at End       | **O(1)**                       |                                              |
+|                          | Delete at Beginning | **O(1)**                       |                                              |
+|                          | Delete at End       | **O(1)**                       |                                              |
+| **Circular Linked List** | Access / Search     | **O(n)**                       | **O(n)**                                     |
+|                          | Insert at Beginning | **O(1)**                       |                                              |
+|                          | Insert at End       | **O(1)** *(with tail pointer)* |                                              |
+|                          | Delete at Beginning | **O(1)**                       |                                              |
+|                          | Delete at End       | O(n) *(O(1) in circular DLL)*  |                                              |
+
+```
+Key Points
+All linked lists use O(n) space for n nodes.
+Doubly linked list uses extra memory per node (prev + next).
+Circular lists avoid NULL at the end and are useful in round-robin scheduling.
+```
