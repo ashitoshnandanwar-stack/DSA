@@ -325,7 +325,7 @@ near ans 5.
 
 ## *Time and Space Complexity*
 
-*Searching*
+### *Searching*
 | Search Method     | Best Case                      | Average Case | Worst Case                | Space Complexity                                   |
 | ----------------- | ------------------------------ | ------------ | ------------------------- | -------------------------------------------------- |
 | **Linear Search** | **O(1)** (first element found) | **O(n)**     | **O(n)** (last/not found) | **O(1)**                                           |
@@ -335,7 +335,7 @@ near ans 5.
 - Binary Search works only on sorted data.
 
   
-*Sorting*
+### *Sorting*
 | Sorting Algorithm  | Best Case                        | Average Case | Worst Case        | Space Complexity                 |
 | ------------------ | -------------------------------- | ------------ | ----------------- | -------------------------------- |
 | **Selection Sort** | O(n²)                            | O(n²)        | O(n²)             | O(1)                             |
@@ -350,7 +350,7 @@ near ans 5.
 - Merge Sort → Stable, uses extra memory
 - Quick Sort → Fastest on average, worst case O(n²) due to poor pivot choice
 
-*Hashing & Hash Table – Complexity*
+### *Hashing & Hash Table – Complexity*
 ```
 Let
 n = number of elements
@@ -372,7 +372,7 @@ Folding Method
 Multiplication Method
 All work in O(1) time.
 ```
-### Collision Resolution Techniques
+#### *Collision Resolution Techniques*
 
 | Technique             | Search / Insert (Average) | Worst Case | Space    |
 | --------------------- | ------------------------- | ---------- | -------- |
@@ -397,7 +397,7 @@ Open addressing methods (Linear, Quadratic, Double) use no extra list space.
 Chaining uses extra memory but reduces clustering.
 ````
 
-*📊 Graph Theory – Time & Space Complexity Summary*
+### *📊 Graph Theory – Time & Space Complexity Summary*
 ```
 Let:
 V = Number of vertices
@@ -446,7 +446,7 @@ Floyd–Warshall → All pairs
 Prim & Kruskal → Greedy MST algorithms
 ```
 
-*🌳 Trees – Time & Space Complexity*
+### *🌳 Trees – Time & Space Complexity*
 
 🔹 Tree Traversals <br>
 (Preorder, Inorder, Postorder, Level Order)
@@ -509,7 +509,7 @@ Quick Exam Summary
 | AVL Tree     | O(log n)    | O(log n) | O(log n) | O(log n) |
 
 
-*Linear Data Structure*
+### *Linear Data Structure*
 - Let n = number of elements.
 
 | Data Structure                | Operation              | Time Complexity | Space Complexity |
