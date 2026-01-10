@@ -1,6 +1,10 @@
 # DSA
 Algorithm and Data Structure
 
+## Design pattern to solve problem in algorithm
+<img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/3be63d1d-b451-4bd3-b162-af7d40c4e9aa" />
+
+
 ### Big O
 
 | Big-O          | Name        | Example              |
