@@ -1,9 +1,16 @@
 # DSA
 Algorithm and Data Structure
 
-## Design pattern to solve problem in algorithm
+## *Design pattern to solve problem in algorithm*
 <img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/3be63d1d-b451-4bd3-b162-af7d40c4e9aa" />
 
+- Dynamic programming always give a optimal path.
+- In Dynamic programming - 1)optimal substructure, 2)overlapping subproblems
+- In Dynamic programming - stored the subproblem , when repeat this problem no need to calculate it stored already in memory.
+
+- Brute Force technique - “Try everything and pick the correct answer."
+
+- Branch and Bound Algorithm - Branching is the process of generating subproblems. Bounding refers to ignoring partial solution that cannot be better than the current best solution. It is search procedure to find the optimal solution. It eliminates those parts of a search spacewhich does not contain better solution.
 
 ### Big O
 
