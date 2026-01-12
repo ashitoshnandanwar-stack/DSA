@@ -555,3 +555,17 @@ All linked lists use O(n) space for n nodes.
 Doubly linked list uses extra memory per node (prev + next).
 Circular lists avoid NULL at the end and are useful in round-robin scheduling.
 ```
+
+<hr>
+
+###4️⃣ Node-based Storage with Arrays
+- Nodes are stored in arrays but linked using indices instead of pointers.
+```
+Index: 0   1   2
+Data:  10  20  30
+Next:  1   2  -1
+
+Useful in:
+Memory-constrained systems
+Simulating linked list without pointers
+```
