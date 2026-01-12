@@ -223,6 +223,8 @@ No duplicate values (in standard BST)
 Inorder traversal → sorted (ascending) order
 Efficient search, insert, delete
 ```
+
+
 | Operation | Average Time | Worst Case |
 | --------- | ------------ | ---------- |
 | Search    | O(log n)     | O(n)       |
