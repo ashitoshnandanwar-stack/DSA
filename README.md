@@ -370,6 +370,16 @@ near ans 5.
 - Merge Sort → Stable, uses extra memory
 - Quick Sort → Fastest on average, worst case O(n²) due to poor pivot choice
 
+| Algorithm          | Good Points                                                                  | Bad Points                                                            |
+| ------------------ | ---------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **Selection Sort** | • Simple<br>• Few swaps<br>• No extra memory                                 | • Always O(n²)<br>• Slow for large data<br>• Not stable               |
+| **Insertion Sort** | • Simple & stable<br>• Best for small/nearly sorted data<br>• Best case O(n) | • O(n²) for large data<br>• Slow for random lists                     |
+| **Bubble Sort**    | • Very easy<br>• Stable<br>• Can stop early                                  | • Very slow O(n²)<br>• Rarely used                                    |
+| **Heap Sort**      | • Guaranteed O(n log n)<br>• No extra memory                                 | • Not stable<br>• More complex<br>• Slower than quicksort in practice |
+| **Merge Sort**     | • Always O(n log n)<br>• Stable<br>• Good for large data                     | • Needs extra memory<br>• Complex                                     |
+| **Quick Sort**     | • Very fast in practice<br>• In-place<br>• Avg O(n log n)                    | • Worst O(n²)<br>• Not stable<br>• Pivot dependent                    |
+
+
 ### *Hashing & Hash Table – Complexity*
 ```
 Let
