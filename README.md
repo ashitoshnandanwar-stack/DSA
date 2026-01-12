@@ -589,3 +589,10 @@ Local variables
 Return address
 All calls are stored in the call stack.
 ```
+| Recursive Function             | Recurrence             | Time Complexity |
+| ------------------------------ | ---------------------- | --------------- |
+| `fact(n) = fact(n-1)`          | T(n) = T(n−1) + c      | **O(n)**        |
+| `fib(n) = fib(n-1) + fib(n-2)` | T(n) = T(n−1) + T(n−2) | **O(2ⁿ)**       |
+| Binary Search                  | T(n) = T(n/2) + c      | **O(log n)**    |
+| Merge Sort                     | T(n) = 2T(n/2) + n     | **O(n log n)**  |
+
