@@ -569,3 +569,23 @@ Useful in:
 Memory-constrained systems
 Simulating linked list without pointers
 ```
+| Feature         | Array          | Linked List         |
+| --------------- | -------------- | ------------------- |
+| Memory          | Contiguous     | Non-contiguous      |
+| Size            | Fixed          | Dynamic             |
+| Access          | O(1) random    | O(n) sequential     |
+| Insert/Delete   | Costly (shift) | Easy (change links) |
+| Cache-friendly  | Yes            | No                  |
+| Memory Overhead | Low            | Extra pointer(s)    | 
+```
+
+🧠 Memory Allocation in Recursion
+Each recursive call gets:
+Its own stack frame
+
+Separate copies of:
+Parameters
+Local variables
+Return address
+All calls are stored in the call stack.
+```
