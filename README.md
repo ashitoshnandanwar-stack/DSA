@@ -112,6 +112,7 @@ Height ≠ Depth (very common confusion)
 ### 🔁 2. Tree Traversals
 - Traversal = Visiting each node exactly once.
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/ceecf3db-f26c-4a86-baa9-fe6fdc0a6826" />
+
 ```
 Depth-First Traversals (DFS)
 Preorder (Root → Left → Right)
