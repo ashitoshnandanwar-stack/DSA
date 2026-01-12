@@ -228,8 +228,8 @@ Efficient search, insert, delete
 | Search    | O(log n)     | O(n)       |
 | Insert    | O(log n)     | O(n)       |
 | Delete    | O(log n)     | O(n)       |
-- (Worst case → skewed tree)
 
+- (Worst case → skewed tree)
 
 Important Points
 - Inorder traversal → sorted sequence
