@@ -241,11 +241,11 @@ Important Points
 
 #### 🌳 “BST can become skewed” — what does it mean?
 -A Binary Search Tree (BST) is said to be skewed when all nodes are on only one side (left or right), so the tree looks like a linked list instead of a balanced tree.
-```
+
 Types of Skewed BST
 1️⃣ Right-skewed BST
 Happens when elements are inserted in increasing order
-
+```
 10
   \
    20
@@ -253,12 +253,13 @@ Happens when elements are inserted in increasing order
       30
         \
          40
-```
 
 ```
+
+
 2️⃣ Left-skewed BST
 Happens when elements are inserted in decreasing order
-
+```
         40
        /
      30
