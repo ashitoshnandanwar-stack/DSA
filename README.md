@@ -605,3 +605,42 @@ All calls are stored in the call stack.
 Advantages:
 - Very fast search, insert, delete
 - Average time complexity: O(1)
+
+### 📊 Load Factor in Hashing
+
+- The Load Factor (α) of a hash table is the ratio of the number of stored elements to the total number of slots in the table.
+
+- 𝛼 = Number of keys stored / Size of hash table
+```
+Example:
+If a hash table has 20 slots and 10 keys are stored:
+
+𝛼 = 10/20 = 0.5
+
+🔑 Important Points about Load Factor
+Measures fullness of the table
+α = 0 → table is empty
+α = 1 → table is full
+
+Affects performance
+Lower α → fewer collisions → faster operations
+Higher α → more collisions → slower search/insert
+
+In Open Addressing
+α must be < 1
+As α approaches 1, performance degrades rapidly
+
+Typical safe value: 0.5 – 0.7
+
+In Chaining
+α can be > 1 (multiple elements per bucket)
+Average search time ≈ O(1 + α)
+
+Controls Rehashing
+When α exceeds a threshold (e.g., 0.7), the table is resized and rehashing is done.
+This maintains efficiency.
+
+Relation with Collisions
+Higher load factor ⇒ more collisions
+Lower load factor ⇒ better distribution and speed
+```
