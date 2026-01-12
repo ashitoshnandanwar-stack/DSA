@@ -172,6 +172,8 @@ Binary tree ≠ Binary Search Tree
 ### ✅ 4. Complete Binary Tree / Almost Complete Binary Tree (ACBT)
 
 <img width="1478" height="666" alt="image" src="https://github.com/user-attachments/assets/506fbd93-cbbc-4abd-b281-7abea71e948d" />
+
+
 ```
 Definition
 A Complete Binary Tree is a binary tree where:
