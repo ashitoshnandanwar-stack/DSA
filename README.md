@@ -230,7 +230,7 @@ Efficient search, insert, delete
 | Search    | O(log n)     | O(n)       |
 | Insert    | O(log n)     | O(n)       |
 | Delete    | O(log n)     | O(n)       |
-
+```
 - (Worst case → skewed tree)
 
 Important Points
@@ -240,7 +240,7 @@ Important Points
 📌 MCQ Trap:
 - BST can become skewed
 - BST is not always balanced
-
+```
 #### 🌳 “BST can become skewed” — what does it mean?
 - A Binary Search Tree (BST) is said to be skewed when all nodes are on only one side (left or right), so the tree looks like a linked list instead of a balanced tree.
 
@@ -274,6 +274,7 @@ Happens when elements are inserted in decreasing order
  10
 
 ```
+
 
 ```
 Why skewing is bad (Exam Point)
