@@ -596,3 +596,12 @@ All calls are stored in the call stack.
 | Binary Search                  | T(n) = T(n/2) + c      | **O(log n)**    |
 | Merge Sort                     | T(n) = 2T(n/2) + n     | **O(n log n)**  |
 
+<hr>
+
+## 🔐 Hashing & Hash Tables
+- Hashing is a technique used to map data (keys) to a fixed-size value called a hash code using a hash function.
+- A Hash Table is a data structure that stores data in the form of key–value pairs using hashing for fast access.
+
+Advantages:
+- Very fast search, insert, delete
+- Average time complexity: O(1)
