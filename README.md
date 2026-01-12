@@ -72,6 +72,14 @@ EG. x-y*z to prefix and postfix?
 - stack operation 2
 
 ## TREE
+
+| Tree Type                              | Condition                                                                  |
+| -------------------------------------- | -------------------------------------------------------------------------- |
+| **Binary Tree**                        | Each node has **≤ 2 children**.                                            |
+| **Strict / Full Binary Tree**          | Every node has **0 or 2 children** only.                                   |
+| **Complete Binary Tree (CBT)**         | All levels full except possibly last; last level filled **left to right**. |
+| **Almost Complete Binary Tree (ACBT)** | Same as CBT: last level may be partial but **left-aligned**.               |
+
 ### 🌳 1. Introduction to Trees & Terminology
 - A tree is a non-linear hierarchical data structure consisting of nodes connected by edges. <br>
 One root node <br>
@@ -127,7 +135,7 @@ Level Order (Level by level)
 A Binary Search Tree (BST) follows this rule:
 - All values in the left subtree are smaller than the root
 - All values in the right subtree are greater than the root
-
+```
 
 
 ### 🌲 3. Binary Trees
@@ -177,6 +185,7 @@ Used in Array representation
 📌 MCQ Tip:
 ACBT does not require last level to be full
 Filling must be left to right
+Complete Binary Trees are always left-biased (last level filled from left).
 ```
 ### 📦 5. Array Implementation of ACBT
 
@@ -221,10 +230,10 @@ Efficient search, insert, delete
 | Delete    | O(log n)     | O(n)       |
 - (Worst case → skewed tree)
 
-```
+
 Important Points
-Inorder traversal → sorted sequence
-Duplicate keys usually not allowed
+- Inorder traversal → sorted sequence
+- Duplicate keys usually not allowed
 
 📌 MCQ Trap:
 - BST can become skewed
@@ -398,6 +407,7 @@ Chaining uses extra memory but reduces clustering.
 ````
 
 ### *📊 Graph Theory – Time & Space Complexity Summary*
+
 ```
 Let:
 V = Number of vertices
@@ -644,3 +654,83 @@ Relation with Collisions
 Higher load factor ⇒ more collisions
 Lower load factor ⇒ better distribution and speed
 ```
+
+<hr>
+
+### BFS (Breadth First Traversal)
+- FT stands for Breadth First Traversal (also called Level Order Traversal).
+
+- In BFT, nodes of a tree are visited level by level, from left to right.
+```
+Example Binary Tree:
+
+      A
+     / \
+    B   C
+   / \   \
+  D   E   F
+
+
+BFT Output:
+
+A  B  C  D  E  F
+```
+
+*Characteristics*
+- Visits all nodes at the same depth before moving to next level
+- Uses a Queue internally
+- Also called Level Order Traversal
+
+*Used in*
+- Finding shortest path in trees
+- Checking if a tree is complete
+- Printing tree level-wise
+
+
+<hr>
+
+## AVL Tree
+- AVL Tree is named after its inventors Georgy Adelson-Velsky and Evgenii Landis.
+- An AVL Tree is a self-balancing Binary Search Tree (BST) where the height difference (balance factor) between left and right subtrees of any node is at most 1.
+- This keeps operations efficient:
+```
+Search → O(log n)
+Insert → O(log n)
+Delete → O(log n)
+```
+
+| Case | Rotation              |
+| ---- | --------------------- |
+| LL   | Right Rotation        |
+| RR   | Left Rotation         |
+| LR   | Left → Right Rotation |
+| RL   | Right → Left Rotation |
+
+<hr>
+
+## Graph
+Complete Graph Formula
+```
+For a complete graph with `n` vertices:
+- Number of edges:
+E = n(n - 1) / 2
+
+- Number of spanning trees (Cayley’s Formula):
+T = n^(n - 2)
+
+So, a complete graph `K_n` has `n^(n - 2)` different spanning trees.
+
+```
+
+| Point           | Dijkstra’s Algorithm                                    | Floyd–Warshall Algorithm                          |
+| --------------- | ------------------------------------------------------- | ------------------------------------------------- |
+| Type            | Single-source shortest path                             | All-pairs shortest paths                          |
+| Finds           | Shortest path from **one source** to all other vertices | Shortest paths between **every pair** of vertices |
+| Approach        | Greedy                                                  | Dynamic Programming                               |
+| Time Complexity | `O(V²)` (or `O(E log V)` with heap)                     | `O(V³)`                                           |
+| Best For        | Large graphs with one starting node                     | Small or medium graphs where all paths are needed |
+| Edge Weights    | Works with non-negative weights only                    | Works with negative weights (no negative cycle)   |
+| Use Case        | GPS, routing from one point                             | Network analysis, distance matrix                 |
+
+
+
